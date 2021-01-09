@@ -1,0 +1,42 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-areas:
+    "header header"
+    "menu content"
+    "footer footer";
+}
+
+.grid-container > * {
+  padding: 25px;
+}
+
+.header {
+  grid-area: header;
+  background: pink;
+}
+
+.menu {
+  display: flex;
+  grid-area: menu;
+  background: gray;
+  height: 55vh;
+  align-items: center;
+}
+.content {
+  display: flex;
+  grid-area: content;
+  background: white;
+  height: 55vh;
+  align-items: center;
+}
+
+.footer {
+  grid-area: footer;
+  background: pink;
+}
